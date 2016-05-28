@@ -1,0 +1,1880 @@
+[ {
+  "status" : "ACTIVE",
+  "stageId" : 0,
+  "attemptId" : 0,
+  "numActiveTasks" : 8,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "submissionTime" : "2016-05-28T00:56:36.013GMT",
+  "firstTaskLaunchedTime" : "2016-05-28T00:56:36.024GMT",
+  "rddData" : [ {
+    "id" : 3,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 2 ],
+    "callSite" : "distinct at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "2",
+      "name" : "distinct"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 2,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 1 ],
+    "callSite" : "map at SparkPageRank.scala:59",
+    "scope" : {
+      "id" : "1",
+      "name" : "map"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 1,
+    "name" : "C:\\webGoogle.txt",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 0 ],
+    "callSite" : "textFile at SparkPageRank.scala:58",
+    "scope" : {
+      "id" : "0",
+      "name" : "textFile"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 0,
+    "name" : "C:\\webGoogle.txt",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ ],
+    "callSite" : "textFile at SparkPageRank.scala:58",
+    "scope" : {
+      "id" : "0",
+      "name" : "textFile"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 45227952,
+  "inputRecords" : 3902060,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleId" : 11,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 2326756,
+  "shuffleWriteRecords" : 183226,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "distinct at SparkPageRank.scala:62",
+  "details" : "org.apache.spark.rdd.RDD.distinct(RDD.scala:395)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:62)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "default",
+  "accumulatorUpdates" : [ ]
+}, {
+  "status" : "PENDING",
+  "stageId" : 8,
+  "attemptId" : 0,
+  "numActiveTasks" : 0,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "rddData" : [ {
+    "id" : 54,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 53 ],
+    "callSite" : "flatMap at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "37",
+      "name" : "flatMap"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 53,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 52 ],
+    "callSite" : "values at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "36",
+      "name" : "map"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 51,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 50 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "35",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 50,
+    "name" : "CoGroupedRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 6, 49 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "35",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 48,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 47 ],
+    "callSite" : "reduceByKey at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "33",
+      "name" : "reduceByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 6,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : true
+    },
+    "parentIds" : [ 5 ],
+    "callSite" : "groupByKey at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "3",
+      "name" : "groupByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 52,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 51 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "35",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 49,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 48 ],
+    "callSite" : "mapValues at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "34",
+      "name" : "mapValues"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 0,
+  "inputRecords" : 0,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleId" : 3,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 0,
+  "shuffleWriteRecords" : 0,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "flatMap at SparkPageRank.scala:66",
+  "details" : "org.apache.spark.rdd.RDD.flatMap(RDD.scala:369)\norg.apache.spark.examples.SparkPageRank$$anonfun$main$1.apply$mcVI$sp(SparkPageRank.scala:66)\nscala.collection.immutable.Range.foreach$mVc$sp(Range.scala:166)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:65)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "",
+  "accumulatorUpdates" : [ ]
+}, {
+  "status" : "PENDING",
+  "stageId" : 11,
+  "attemptId" : 0,
+  "numActiveTasks" : 0,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "rddData" : [ {
+    "id" : 75,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 74 ],
+    "callSite" : "flatMap at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "52",
+      "name" : "flatMap"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 71,
+    "name" : "CoGroupedRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 6, 70 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "50",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 69,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 68 ],
+    "callSite" : "reduceByKey at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "48",
+      "name" : "reduceByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 73,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 72 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "50",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 6,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : true
+    },
+    "parentIds" : [ 5 ],
+    "callSite" : "groupByKey at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "3",
+      "name" : "groupByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 70,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 69 ],
+    "callSite" : "mapValues at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "49",
+      "name" : "mapValues"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 72,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 71 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "50",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 74,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 73 ],
+    "callSite" : "values at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "51",
+      "name" : "map"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 0,
+  "inputRecords" : 0,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleId" : 0,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 0,
+  "shuffleWriteRecords" : 0,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "flatMap at SparkPageRank.scala:66",
+  "details" : "org.apache.spark.rdd.RDD.flatMap(RDD.scala:369)\norg.apache.spark.examples.SparkPageRank$$anonfun$main$1.apply$mcVI$sp(SparkPageRank.scala:66)\nscala.collection.immutable.Range.foreach$mVc$sp(Range.scala:166)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:65)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "",
+  "accumulatorUpdates" : [ ]
+}, {
+  "status" : "PENDING",
+  "stageId" : 2,
+  "attemptId" : 0,
+  "numActiveTasks" : 0,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "rddData" : [ {
+    "id" : 12,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 11 ],
+    "callSite" : "flatMap at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "7",
+      "name" : "flatMap"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 7,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 6 ],
+    "callSite" : "mapValues at SparkPageRank.scala:63",
+    "scope" : {
+      "id" : "4",
+      "name" : "mapValues"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 9,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 8 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "5",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 10,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 9 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "5",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 6,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : true
+    },
+    "parentIds" : [ 5 ],
+    "callSite" : "groupByKey at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "3",
+      "name" : "groupByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 11,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 10 ],
+    "callSite" : "values at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "6",
+      "name" : "map"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 8,
+    "name" : "CoGroupedRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 6, 7 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "5",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 0,
+  "inputRecords" : 0,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleId" : 9,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 0,
+  "shuffleWriteRecords" : 0,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "flatMap at SparkPageRank.scala:66",
+  "details" : "org.apache.spark.rdd.RDD.flatMap(RDD.scala:369)\norg.apache.spark.examples.SparkPageRank$$anonfun$main$1.apply$mcVI$sp(SparkPageRank.scala:66)\nscala.collection.immutable.Range.foreach$mVc$sp(Range.scala:166)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:65)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "",
+  "accumulatorUpdates" : [ ]
+}, {
+  "status" : "PENDING",
+  "stageId" : 5,
+  "attemptId" : 0,
+  "numActiveTasks" : 0,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "rddData" : [ {
+    "id" : 33,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 32 ],
+    "callSite" : "flatMap at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "22",
+      "name" : "flatMap"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 28,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 27 ],
+    "callSite" : "mapValues at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "19",
+      "name" : "mapValues"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 32,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 31 ],
+    "callSite" : "values at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "21",
+      "name" : "map"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 29,
+    "name" : "CoGroupedRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 6, 28 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "20",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 27,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 26 ],
+    "callSite" : "reduceByKey at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "18",
+      "name" : "reduceByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 6,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : true
+    },
+    "parentIds" : [ 5 ],
+    "callSite" : "groupByKey at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "3",
+      "name" : "groupByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 31,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 30 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "20",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 30,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 29 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "20",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 0,
+  "inputRecords" : 0,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleId" : 6,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 0,
+  "shuffleWriteRecords" : 0,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "flatMap at SparkPageRank.scala:66",
+  "details" : "org.apache.spark.rdd.RDD.flatMap(RDD.scala:369)\norg.apache.spark.examples.SparkPageRank$$anonfun$main$1.apply$mcVI$sp(SparkPageRank.scala:66)\nscala.collection.immutable.Range.foreach$mVc$sp(Range.scala:166)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:65)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "",
+  "accumulatorUpdates" : [ ]
+}, {
+  "status" : "PENDING",
+  "stageId" : 4,
+  "attemptId" : 0,
+  "numActiveTasks" : 0,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "rddData" : [ {
+    "id" : 26,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 25 ],
+    "callSite" : "flatMap at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "17",
+      "name" : "flatMap"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 22,
+    "name" : "CoGroupedRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 6, 21 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "15",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 24,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 23 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "15",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 21,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 20 ],
+    "callSite" : "mapValues at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "14",
+      "name" : "mapValues"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 6,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : true
+    },
+    "parentIds" : [ 5 ],
+    "callSite" : "groupByKey at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "3",
+      "name" : "groupByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 25,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 24 ],
+    "callSite" : "values at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "16",
+      "name" : "map"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 20,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 19 ],
+    "callSite" : "reduceByKey at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "13",
+      "name" : "reduceByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 23,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 22 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "15",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 0,
+  "inputRecords" : 0,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleId" : 7,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 0,
+  "shuffleWriteRecords" : 0,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "flatMap at SparkPageRank.scala:66",
+  "details" : "org.apache.spark.rdd.RDD.flatMap(RDD.scala:369)\norg.apache.spark.examples.SparkPageRank$$anonfun$main$1.apply$mcVI$sp(SparkPageRank.scala:66)\nscala.collection.immutable.Range.foreach$mVc$sp(Range.scala:166)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:65)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "",
+  "accumulatorUpdates" : [ ]
+}, {
+  "status" : "PENDING",
+  "stageId" : 7,
+  "attemptId" : 0,
+  "numActiveTasks" : 0,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "rddData" : [ {
+    "id" : 47,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 46 ],
+    "callSite" : "flatMap at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "32",
+      "name" : "flatMap"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 42,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 41 ],
+    "callSite" : "mapValues at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "29",
+      "name" : "mapValues"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 45,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 44 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "30",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 43,
+    "name" : "CoGroupedRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 6, 42 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "30",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 46,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 45 ],
+    "callSite" : "values at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "31",
+      "name" : "map"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 41,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 40 ],
+    "callSite" : "reduceByKey at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "28",
+      "name" : "reduceByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 44,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 43 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "30",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 6,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : true
+    },
+    "parentIds" : [ 5 ],
+    "callSite" : "groupByKey at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "3",
+      "name" : "groupByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 0,
+  "inputRecords" : 0,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleId" : 4,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 0,
+  "shuffleWriteRecords" : 0,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "flatMap at SparkPageRank.scala:66",
+  "details" : "org.apache.spark.rdd.RDD.flatMap(RDD.scala:369)\norg.apache.spark.examples.SparkPageRank$$anonfun$main$1.apply$mcVI$sp(SparkPageRank.scala:66)\nscala.collection.immutable.Range.foreach$mVc$sp(Range.scala:166)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:65)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "",
+  "accumulatorUpdates" : [ ]
+}, {
+  "status" : "PENDING",
+  "stageId" : 1,
+  "attemptId" : 0,
+  "numActiveTasks" : 0,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "rddData" : [ {
+    "id" : 5,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 4 ],
+    "callSite" : "distinct at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "2",
+      "name" : "distinct"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 4,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 3 ],
+    "callSite" : "distinct at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "2",
+      "name" : "distinct"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 0,
+  "inputRecords" : 0,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleId" : 10,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 0,
+  "shuffleWriteRecords" : 0,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "distinct at SparkPageRank.scala:62",
+  "details" : "org.apache.spark.rdd.RDD.distinct(RDD.scala:395)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:62)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "",
+  "accumulatorUpdates" : [ ]
+}, {
+  "status" : "PENDING",
+  "stageId" : 10,
+  "attemptId" : 0,
+  "numActiveTasks" : 0,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "rddData" : [ {
+    "id" : 68,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 67 ],
+    "callSite" : "flatMap at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "47",
+      "name" : "flatMap"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 67,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 66 ],
+    "callSite" : "values at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "46",
+      "name" : "map"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 64,
+    "name" : "CoGroupedRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 6, 63 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "45",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 66,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 65 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "45",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 65,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 64 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "45",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 6,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : true
+    },
+    "parentIds" : [ 5 ],
+    "callSite" : "groupByKey at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "3",
+      "name" : "groupByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 62,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 61 ],
+    "callSite" : "reduceByKey at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "43",
+      "name" : "reduceByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 63,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 62 ],
+    "callSite" : "mapValues at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "44",
+      "name" : "mapValues"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 0,
+  "inputRecords" : 0,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleId" : 1,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 0,
+  "shuffleWriteRecords" : 0,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "flatMap at SparkPageRank.scala:66",
+  "details" : "org.apache.spark.rdd.RDD.flatMap(RDD.scala:369)\norg.apache.spark.examples.SparkPageRank$$anonfun$main$1.apply$mcVI$sp(SparkPageRank.scala:66)\nscala.collection.immutable.Range.foreach$mVc$sp(Range.scala:166)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:65)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "",
+  "accumulatorUpdates" : [ ]
+}, {
+  "status" : "PENDING",
+  "stageId" : 9,
+  "attemptId" : 0,
+  "numActiveTasks" : 0,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "rddData" : [ {
+    "id" : 61,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 60 ],
+    "callSite" : "flatMap at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "42",
+      "name" : "flatMap"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 56,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 55 ],
+    "callSite" : "mapValues at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "39",
+      "name" : "mapValues"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 57,
+    "name" : "CoGroupedRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 6, 56 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "40",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 60,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 59 ],
+    "callSite" : "values at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "41",
+      "name" : "map"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 58,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 57 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "40",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 6,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : true
+    },
+    "parentIds" : [ 5 ],
+    "callSite" : "groupByKey at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "3",
+      "name" : "groupByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 59,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 58 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "40",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 55,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 54 ],
+    "callSite" : "reduceByKey at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "38",
+      "name" : "reduceByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 0,
+  "inputRecords" : 0,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleId" : 2,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 0,
+  "shuffleWriteRecords" : 0,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "flatMap at SparkPageRank.scala:66",
+  "details" : "org.apache.spark.rdd.RDD.flatMap(RDD.scala:369)\norg.apache.spark.examples.SparkPageRank$$anonfun$main$1.apply$mcVI$sp(SparkPageRank.scala:66)\nscala.collection.immutable.Range.foreach$mVc$sp(Range.scala:166)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:65)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "",
+  "accumulatorUpdates" : [ ]
+}, {
+  "status" : "PENDING",
+  "stageId" : 12,
+  "attemptId" : 0,
+  "numActiveTasks" : 0,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "rddData" : [ {
+    "id" : 77,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 76 ],
+    "callSite" : "mapValues at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "54",
+      "name" : "mapValues"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 76,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 75 ],
+    "callSite" : "reduceByKey at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "53",
+      "name" : "reduceByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 0,
+  "inputRecords" : 0,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 0,
+  "shuffleWriteRecords" : 0,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "count at SparkPageRank.scala:73",
+  "details" : "org.apache.spark.rdd.RDD.count(RDD.scala:1099)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:73)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "",
+  "accumulatorUpdates" : [ ]
+}, {
+  "status" : "PENDING",
+  "stageId" : 3,
+  "attemptId" : 0,
+  "numActiveTasks" : 0,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "rddData" : [ {
+    "id" : 19,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 18 ],
+    "callSite" : "flatMap at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "12",
+      "name" : "flatMap"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 17,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 16 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "10",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 13,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 12 ],
+    "callSite" : "reduceByKey at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "8",
+      "name" : "reduceByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 15,
+    "name" : "CoGroupedRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 6, 14 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "10",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 14,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 13 ],
+    "callSite" : "mapValues at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "9",
+      "name" : "mapValues"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 6,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : true
+    },
+    "parentIds" : [ 5 ],
+    "callSite" : "groupByKey at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "3",
+      "name" : "groupByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 16,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 15 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "10",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 18,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 17 ],
+    "callSite" : "values at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "11",
+      "name" : "map"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 0,
+  "inputRecords" : 0,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleId" : 8,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 0,
+  "shuffleWriteRecords" : 0,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "flatMap at SparkPageRank.scala:66",
+  "details" : "org.apache.spark.rdd.RDD.flatMap(RDD.scala:369)\norg.apache.spark.examples.SparkPageRank$$anonfun$main$1.apply$mcVI$sp(SparkPageRank.scala:66)\nscala.collection.immutable.Range.foreach$mVc$sp(Range.scala:166)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:65)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "",
+  "accumulatorUpdates" : [ ]
+}, {
+  "status" : "PENDING",
+  "stageId" : 6,
+  "attemptId" : 0,
+  "numActiveTasks" : 0,
+  "numCompleteTasks" : 0,
+  "numFailedTasks" : 0,
+  "executorRunTime" : 0,
+  "rddData" : [ {
+    "id" : 40,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 39 ],
+    "callSite" : "flatMap at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "27",
+      "name" : "flatMap"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 34,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 33 ],
+    "callSite" : "reduceByKey at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "23",
+      "name" : "reduceByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 37,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 36 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "25",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 35,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 34 ],
+    "callSite" : "mapValues at SparkPageRank.scala:70",
+    "scope" : {
+      "id" : "24",
+      "name" : "mapValues"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 6,
+    "name" : "ShuffledRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : true
+    },
+    "parentIds" : [ 5 ],
+    "callSite" : "groupByKey at SparkPageRank.scala:62",
+    "scope" : {
+      "id" : "3",
+      "name" : "groupByKey"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 36,
+    "name" : "CoGroupedRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 6, 35 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "25",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 39,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 38 ],
+    "callSite" : "values at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "26",
+      "name" : "map"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  }, {
+    "id" : 38,
+    "name" : "MapPartitionsRDD",
+    "numPartitions" : 10,
+    "storageLevel" : {
+      "valid" : false
+    },
+    "parentIds" : [ 37 ],
+    "callSite" : "join at SparkPageRank.scala:66",
+    "scope" : {
+      "id" : "25",
+      "name" : "join"
+    },
+    "numCachedPartitions" : 0,
+    "memSize" : 0,
+    "diskSize" : 0,
+    "externalBlockStoreSize" : 0,
+    "cached" : false
+  } ],
+  "inputBytes" : 0,
+  "inputRecords" : 0,
+  "outputBytes" : 0,
+  "outputRecords" : 0,
+  "shuffleId" : 5,
+  "shuffleReadBytes" : 0,
+  "shuffleReadRecords" : 0,
+  "shuffleWriteBytes" : 0,
+  "shuffleWriteRecords" : 0,
+  "memoryBytesSpilled" : 0,
+  "diskBytesSpilled" : 0,
+  "name" : "flatMap at SparkPageRank.scala:66",
+  "details" : "org.apache.spark.rdd.RDD.flatMap(RDD.scala:369)\norg.apache.spark.examples.SparkPageRank$$anonfun$main$1.apply$mcVI$sp(SparkPageRank.scala:66)\nscala.collection.immutable.Range.foreach$mVc$sp(Range.scala:166)\norg.apache.spark.examples.SparkPageRank$.main(SparkPageRank.scala:65)\norg.apache.spark.examples.SparkPageRank.main(SparkPageRank.scala)\nsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.lang.reflect.Method.invoke(Method.java:498)\norg.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:737)\norg.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:183)\norg.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:208)\norg.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:122)\norg.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)",
+  "schedulingPool" : "",
+  "accumulatorUpdates" : [ ]
+} ]

@@ -1,0 +1,563 @@
+[ {
+  "taskId" : 46,
+  "index" : 7,
+  "attempt" : 0,
+  "stageId" : 4,
+  "status" : "SUCCESS",
+  "launchTime" : "2016-05-28T00:57:22.788GMT",
+  "finishTime" : "2016-05-28T00:57:28.004GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ {
+    "id" : 8300,
+    "name" : "internal.metrics.executorDeserializeTime",
+    "update" : "5",
+    "value" : "7"
+  }, {
+    "id" : 8301,
+    "name" : "internal.metrics.executorRunTime",
+    "update" : "5209",
+    "value" : "10369"
+  }, {
+    "id" : 8302,
+    "name" : "internal.metrics.resultSize",
+    "update" : "4619",
+    "value" : "9515"
+  }, {
+    "id" : 8303,
+    "name" : "internal.metrics.jvmGCTime",
+    "update" : "2321",
+    "value" : "4642"
+  }, {
+    "id" : 8305,
+    "name" : "internal.metrics.memoryBytesSpilled",
+    "update" : "33532687",
+    "value" : "67032357"
+  }, {
+    "id" : 8306,
+    "name" : "internal.metrics.diskBytesSpilled",
+    "update" : "4078136",
+    "value" : "7835772"
+  }, {
+    "id" : 8307,
+    "name" : "internal.metrics.peakExecutionMemory",
+    "update" : "59761340",
+    "value" : "120373963"
+  }, {
+    "id" : 8309,
+    "name" : "internal.metrics.blockFetchInfos",
+    "update" : "List(org.apache.spark.status.api.v1.BlockFetchInfo@45d51472)",
+    "value" : "ArrayBuffer(org.apache.spark.status.api.v1.BlockFetchInfo@37cf88ee, org.apache.spark.status.api.v1.BlockFetchInfo@45d51472)"
+  }, {
+    "id" : 8312,
+    "name" : "internal.metrics.shuffle.read.localBlocksFetched",
+    "update" : "10",
+    "value" : "20"
+  }, {
+    "id" : 8313,
+    "name" : "internal.metrics.shuffle.read.localBlockFetchInfos",
+    "update" : "ArrayBuffer(org.apache.spark.status.api.v1.BlockFetchInfo@b8d144b, org.apache.spark.status.api.v1.BlockFetchInfo@af509d, org.apache.spark.status.api.v1.BlockFetchInfo@6db4b27e, org.apache.spark.status.api.v1.BlockFetchInfo@26f7dfde, org.apache.spark.status.api.v1.BlockFetchInfo@45bbb807, org.apache.spark.status.api.v1.BlockFetchInfo@3f6a2395, org.apache.spark.status.api.v1.BlockFetchInfo@77055144, org.apache.spark.status.api.v1.BlockFetchInfo@6f946955, org.apache.spark.status.api.v1.BlockFetchInfo@77779f20, org.apache.spark.status.api.v1.BlockFetchInfo@19ef7cd0)",
+    "value" : "ArrayBuffer(org.apache.spark.status.api.v1.BlockFetchInfo@44bd81d8, org.apache.spark.status.api.v1.BlockFetchInfo@8af86db, org.apache.spark.status.api.v1.BlockFetchInfo@436a9671, org.apache.spark.status.api.v1.BlockFetchInfo@21016b30, org.apache.spark.status.api.v1.BlockFetchInfo@99a9d89, org.apache.spark.status.api.v1.BlockFetchInfo@7d775b3f, org.apache.spark.status.api.v1.BlockFetchInfo@6ab993fe, org.apache.spark.status.api.v1.BlockFetchInfo@40cb2d72, org.apache.spark.status.api.v1.BlockFetchInfo@1d608637, org.apache.spark.status.api.v1.BlockFetchInfo@5a099807, org.apache.spark.status.api.v1.BlockFetchInfo@b8d144b, org.apache.spark.status.api.v1.BlockFetchInfo@af509d, org.apache.spark.status.api.v1.BlockFetchInfo@6db4b27e, org.apache.spark.status.api.v1.BlockFetchInfo@26f7dfde, org.apache.spark.status.api.v1.BlockFetchInfo@45bbb807, org.apache.spark.status.api.v1.BlockFetchInfo@3f6a2395, org.apache.spark.status.api.v1.BlockFetchInfo@77055144, org.apache.spark.status.api.v1.BlockFetchInfo@6f946955, org.apache.spark.status.api.v1.BlockFetchInfo@77779f20, org.apache.spark.status.api.v1.BlockFetchInfo@19ef7cd0)"
+  }, {
+    "id" : 8315,
+    "name" : "internal.metrics.shuffle.read.localBytesRead",
+    "update" : "2863143",
+    "value" : "5713969"
+  }, {
+    "id" : 8317,
+    "name" : "internal.metrics.shuffle.read.recordsRead",
+    "update" : "207400",
+    "value" : "413596"
+  }, {
+    "id" : 8318,
+    "name" : "internal.metrics.shuffle.read.dataCharacteristics",
+    "update" : "Map(259193 -> 9.765625E-4, 202465 -> 9.765625E-4, 527861 -> 9.765625E-4, 872372 -> 9.765625E-4)",
+    "value" : "Map(259193 -> 9.765625E-4, 202465 -> 9.765625E-4, 176490 -> 9.765625E-4, 24531 -> 9.765625E-4, 867736 -> 9.765625E-4, 428689 -> 9.765625E-4, 527861 -> 9.765625E-4, 872372 -> 9.765625E-4)"
+  }, {
+    "id" : 8319,
+    "name" : "internal.metrics.shuffle.write.bytesWritten",
+    "update" : "2924172",
+    "value" : "5842794"
+  }, {
+    "id" : 8320,
+    "name" : "internal.metrics.shuffle.write.recordsWritten",
+    "update" : "204640",
+    "value" : "408760"
+  }, {
+    "id" : 8321,
+    "name" : "internal.metrics.shuffle.write.writeTime",
+    "update" : "21267814",
+    "value" : "38424214"
+  }, {
+    "id" : 8323,
+    "name" : "internal.metrics.input.readMethod",
+    "update" : "Memory",
+    "value" : "Memory"
+  }, {
+    "id" : 8324,
+    "name" : "internal.metrics.input.bytesRead",
+    "update" : "39345672",
+    "value" : "78265576"
+  }, {
+    "id" : 8325,
+    "name" : "internal.metrics.input.recordsRead",
+    "update" : "73926",
+    "value" : "147882"
+  } ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 5,
+    "executorRunTime" : 5209,
+    "resultSize" : 4619,
+    "jvmGcTime" : 2321,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 33532687,
+    "diskBytesSpilled" : 4078136,
+    "inputMetrics" : {
+      "bytesRead" : 39345672,
+      "recordsRead" : 73926
+    },
+    "blockFetchInfos" : [ {
+      "blockId" : {
+        "rddId" : 6,
+        "splitIndex" : 7,
+        "shuffle" : false,
+        "broadcast" : false,
+        "rdd" : true
+      },
+      "bytes" : 39345672
+    } ],
+    "shuffleReadMetrics" : {
+      "remoteBlocksFetched" : 0,
+      "remoteBlockFetchInfos" : [ ],
+      "localBlocksFetched" : 10,
+      "localBlockFetchInfos" : [ {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 0,
+          "reduceId" : 7,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 285738
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 1,
+          "reduceId" : 7,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 282132
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 2,
+          "reduceId" : 7,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 287873
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 3,
+          "reduceId" : 7,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 287905
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 4,
+          "reduceId" : 7,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 286741
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 5,
+          "reduceId" : 7,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 284057
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 6,
+          "reduceId" : 7,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 289512
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 7,
+          "reduceId" : 7,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 288130
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 8,
+          "reduceId" : 7,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 286178
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 9,
+          "reduceId" : 7,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 284877
+      } ],
+      "fetchWaitTime" : 0,
+      "remoteBytesRead" : 0,
+      "totalBlocksFetched" : 10,
+      "recordsRead" : 207400,
+      "dataCharacteristics" : {
+        "259193" : 9.765625E-4,
+        "202465" : 9.765625E-4,
+        "527861" : 9.765625E-4,
+        "872372" : 9.765625E-4
+      }
+    },
+    "shuffleWriteMetrics" : {
+      "bytesWritten" : 2924172,
+      "writeTime" : 21267814,
+      "recordsWritten" : 204640,
+      "dataCharacteristics" : { }
+    }
+  }
+}, {
+  "taskId" : 49,
+  "index" : 6,
+  "attempt" : 0,
+  "stageId" : 4,
+  "status" : "RUNNING",
+  "launchTime" : "2016-05-28T00:57:28.004GMT",
+  "finishTime" : "1970-01-01T00:00:00.000GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "NODE_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 0,
+    "executorRunTime" : 0,
+    "resultSize" : 0,
+    "jvmGcTime" : 0,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "blockFetchInfos" : [ ]
+  }
+}, {
+  "taskId" : 45,
+  "index" : 5,
+  "attempt" : 0,
+  "stageId" : 4,
+  "status" : "SUCCESS",
+  "launchTime" : "2016-05-28T00:57:22.788GMT",
+  "finishTime" : "2016-05-28T00:57:27.958GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ {
+    "id" : 8300,
+    "name" : "internal.metrics.executorDeserializeTime",
+    "update" : "2",
+    "value" : "2"
+  }, {
+    "id" : 8301,
+    "name" : "internal.metrics.executorRunTime",
+    "update" : "5160",
+    "value" : "5160"
+  }, {
+    "id" : 8302,
+    "name" : "internal.metrics.resultSize",
+    "update" : "4896",
+    "value" : "4896"
+  }, {
+    "id" : 8303,
+    "name" : "internal.metrics.jvmGCTime",
+    "update" : "2321",
+    "value" : "2321"
+  }, {
+    "id" : 8304,
+    "name" : "internal.metrics.resultSerializationTime",
+    "update" : "1",
+    "value" : "1"
+  }, {
+    "id" : 8305,
+    "name" : "internal.metrics.memoryBytesSpilled",
+    "update" : "33499670",
+    "value" : "33499670"
+  }, {
+    "id" : 8306,
+    "name" : "internal.metrics.diskBytesSpilled",
+    "update" : "3757636",
+    "value" : "3757636"
+  }, {
+    "id" : 8307,
+    "name" : "internal.metrics.peakExecutionMemory",
+    "update" : "60612623",
+    "value" : "60612623"
+  }, {
+    "id" : 8308,
+    "name" : "internal.metrics.updatedBlockStatuses",
+    "update" : "List((rdd_6_9,BlockStatus(StorageLevel(false, false, false, false, 1),0,0)))",
+    "value" : "List((rdd_6_9,BlockStatus(StorageLevel(false, false, false, false, 1),0,0)))"
+  }, {
+    "id" : 8309,
+    "name" : "internal.metrics.blockFetchInfos",
+    "update" : "List(org.apache.spark.status.api.v1.BlockFetchInfo@37cf88ee)",
+    "value" : "ArrayBuffer(org.apache.spark.status.api.v1.BlockFetchInfo@37cf88ee)"
+  }, {
+    "id" : 8312,
+    "name" : "internal.metrics.shuffle.read.localBlocksFetched",
+    "update" : "10",
+    "value" : "10"
+  }, {
+    "id" : 8313,
+    "name" : "internal.metrics.shuffle.read.localBlockFetchInfos",
+    "update" : "ArrayBuffer(org.apache.spark.status.api.v1.BlockFetchInfo@44bd81d8, org.apache.spark.status.api.v1.BlockFetchInfo@8af86db, org.apache.spark.status.api.v1.BlockFetchInfo@436a9671, org.apache.spark.status.api.v1.BlockFetchInfo@21016b30, org.apache.spark.status.api.v1.BlockFetchInfo@99a9d89, org.apache.spark.status.api.v1.BlockFetchInfo@7d775b3f, org.apache.spark.status.api.v1.BlockFetchInfo@6ab993fe, org.apache.spark.status.api.v1.BlockFetchInfo@40cb2d72, org.apache.spark.status.api.v1.BlockFetchInfo@1d608637, org.apache.spark.status.api.v1.BlockFetchInfo@5a099807)",
+    "value" : "ArrayBuffer(org.apache.spark.status.api.v1.BlockFetchInfo@44bd81d8, org.apache.spark.status.api.v1.BlockFetchInfo@8af86db, org.apache.spark.status.api.v1.BlockFetchInfo@436a9671, org.apache.spark.status.api.v1.BlockFetchInfo@21016b30, org.apache.spark.status.api.v1.BlockFetchInfo@99a9d89, org.apache.spark.status.api.v1.BlockFetchInfo@7d775b3f, org.apache.spark.status.api.v1.BlockFetchInfo@6ab993fe, org.apache.spark.status.api.v1.BlockFetchInfo@40cb2d72, org.apache.spark.status.api.v1.BlockFetchInfo@1d608637, org.apache.spark.status.api.v1.BlockFetchInfo@5a099807)"
+  }, {
+    "id" : 8315,
+    "name" : "internal.metrics.shuffle.read.localBytesRead",
+    "update" : "2850826",
+    "value" : "2850826"
+  }, {
+    "id" : 8317,
+    "name" : "internal.metrics.shuffle.read.recordsRead",
+    "update" : "206196",
+    "value" : "206196"
+  }, {
+    "id" : 8318,
+    "name" : "internal.metrics.shuffle.read.dataCharacteristics",
+    "update" : "Map(176490 -> 9.765625E-4, 24531 -> 9.765625E-4, 867736 -> 9.765625E-4, 428689 -> 9.765625E-4)",
+    "value" : "Map(176490 -> 9.765625E-4, 24531 -> 9.765625E-4, 867736 -> 9.765625E-4, 428689 -> 9.765625E-4)"
+  }, {
+    "id" : 8319,
+    "name" : "internal.metrics.shuffle.write.bytesWritten",
+    "update" : "2918622",
+    "value" : "2918622"
+  }, {
+    "id" : 8320,
+    "name" : "internal.metrics.shuffle.write.recordsWritten",
+    "update" : "204120",
+    "value" : "204120"
+  }, {
+    "id" : 8321,
+    "name" : "internal.metrics.shuffle.write.writeTime",
+    "update" : "17156400",
+    "value" : "17156400"
+  }, {
+    "id" : 8323,
+    "name" : "internal.metrics.input.readMethod",
+    "update" : "Memory",
+    "value" : "Memory"
+  }, {
+    "id" : 8324,
+    "name" : "internal.metrics.input.bytesRead",
+    "update" : "38919904",
+    "value" : "38919904"
+  }, {
+    "id" : 8325,
+    "name" : "internal.metrics.input.recordsRead",
+    "update" : "73956",
+    "value" : "73956"
+  } ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 2,
+    "executorRunTime" : 5160,
+    "resultSize" : 4896,
+    "jvmGcTime" : 2321,
+    "resultSerializationTime" : 1,
+    "memoryBytesSpilled" : 33499670,
+    "diskBytesSpilled" : 3757636,
+    "inputMetrics" : {
+      "bytesRead" : 38919904,
+      "recordsRead" : 73956
+    },
+    "blockFetchInfos" : [ {
+      "blockId" : {
+        "rddId" : 6,
+        "splitIndex" : 5,
+        "shuffle" : false,
+        "broadcast" : false,
+        "rdd" : true
+      },
+      "bytes" : 38919904
+    } ],
+    "shuffleReadMetrics" : {
+      "remoteBlocksFetched" : 0,
+      "remoteBlockFetchInfos" : [ ],
+      "localBlocksFetched" : 10,
+      "localBlockFetchInfos" : [ {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 0,
+          "reduceId" : 5,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 286089
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 1,
+          "reduceId" : 5,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 282992
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 2,
+          "reduceId" : 5,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 285685
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 3,
+          "reduceId" : 5,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 284649
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 4,
+          "reduceId" : 5,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 286100
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 5,
+          "reduceId" : 5,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 285745
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 6,
+          "reduceId" : 5,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 287192
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 7,
+          "reduceId" : 5,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 286423
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 8,
+          "reduceId" : 5,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 283753
+      }, {
+        "blockId" : {
+          "shuffleId" : 8,
+          "mapId" : 9,
+          "reduceId" : 5,
+          "shuffle" : true,
+          "broadcast" : false,
+          "rdd" : false
+        },
+        "bytes" : 282198
+      } ],
+      "fetchWaitTime" : 0,
+      "remoteBytesRead" : 0,
+      "totalBlocksFetched" : 10,
+      "recordsRead" : 206196,
+      "dataCharacteristics" : {
+        "176490" : 9.765625E-4,
+        "24531" : 9.765625E-4,
+        "867736" : 9.765625E-4,
+        "428689" : 9.765625E-4
+      }
+    },
+    "shuffleWriteMetrics" : {
+      "bytesWritten" : 2918622,
+      "writeTime" : 17156400,
+      "recordsWritten" : 204120,
+      "dataCharacteristics" : { }
+    }
+  }
+}, {
+  "taskId" : 48,
+  "index" : 9,
+  "attempt" : 0,
+  "stageId" : 4,
+  "status" : "RUNNING",
+  "launchTime" : "2016-05-28T00:57:27.952GMT",
+  "finishTime" : "1970-01-01T00:00:00.000GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 0,
+    "executorRunTime" : 0,
+    "resultSize" : 0,
+    "jvmGcTime" : 0,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "blockFetchInfos" : [ ]
+  }
+} ]

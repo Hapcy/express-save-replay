@@ -1,0 +1,1150 @@
+[ {
+  "taskId" : 17,
+  "index" : 7,
+  "attempt" : 0,
+  "stageId" : 1,
+  "status" : "RUNNING",
+  "launchTime" : "2016-05-28T00:56:50.547GMT",
+  "finishTime" : "1970-01-01T00:00:00.000GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "NODE_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 0,
+    "executorRunTime" : 0,
+    "resultSize" : 0,
+    "jvmGcTime" : 0,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "blockFetchInfos" : [ ]
+  }
+}, {
+  "taskId" : 11,
+  "index" : 1,
+  "attempt" : 0,
+  "stageId" : 1,
+  "status" : "RUNNING",
+  "launchTime" : "2016-05-28T00:56:50.543GMT",
+  "finishTime" : "1970-01-01T00:00:00.000GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "NODE_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 0,
+    "executorRunTime" : 0,
+    "resultSize" : 0,
+    "jvmGcTime" : 0,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "blockFetchInfos" : [ ]
+  }
+}, {
+  "taskId" : 14,
+  "index" : 4,
+  "attempt" : 0,
+  "stageId" : 1,
+  "status" : "RUNNING",
+  "launchTime" : "2016-05-28T00:56:50.545GMT",
+  "finishTime" : "1970-01-01T00:00:00.000GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "NODE_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 0,
+    "executorRunTime" : 0,
+    "resultSize" : 0,
+    "jvmGcTime" : 0,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "blockFetchInfos" : [ ]
+  }
+}, {
+  "taskId" : 13,
+  "index" : 3,
+  "attempt" : 0,
+  "stageId" : 1,
+  "status" : "RUNNING",
+  "launchTime" : "2016-05-28T00:56:50.544GMT",
+  "finishTime" : "1970-01-01T00:00:00.000GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "NODE_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 0,
+    "executorRunTime" : 0,
+    "resultSize" : 0,
+    "jvmGcTime" : 0,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "blockFetchInfos" : [ ]
+  }
+}, {
+  "taskId" : 16,
+  "index" : 6,
+  "attempt" : 0,
+  "stageId" : 1,
+  "status" : "RUNNING",
+  "launchTime" : "2016-05-28T00:56:50.546GMT",
+  "finishTime" : "1970-01-01T00:00:00.000GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "NODE_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 0,
+    "executorRunTime" : 0,
+    "resultSize" : 0,
+    "jvmGcTime" : 0,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "blockFetchInfos" : [ ]
+  }
+}, {
+  "taskId" : 10,
+  "index" : 0,
+  "attempt" : 0,
+  "stageId" : 1,
+  "status" : "RUNNING",
+  "launchTime" : "2016-05-28T00:56:50.541GMT",
+  "finishTime" : "1970-01-01T00:00:00.000GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "NODE_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 0,
+    "executorRunTime" : 0,
+    "resultSize" : 0,
+    "jvmGcTime" : 0,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "blockFetchInfos" : [ ]
+  }
+}, {
+  "taskId" : 12,
+  "index" : 2,
+  "attempt" : 0,
+  "stageId" : 1,
+  "status" : "RUNNING",
+  "launchTime" : "2016-05-28T00:56:50.543GMT",
+  "finishTime" : "1970-01-01T00:00:00.000GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "NODE_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 0,
+    "executorRunTime" : 0,
+    "resultSize" : 0,
+    "jvmGcTime" : 0,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "blockFetchInfos" : [ ]
+  }
+}, {
+  "taskId" : 15,
+  "index" : 5,
+  "attempt" : 0,
+  "stageId" : 1,
+  "status" : "RUNNING",
+  "launchTime" : "2016-05-28T00:56:50.546GMT",
+  "finishTime" : "1970-01-01T00:00:00.000GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "NODE_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 0,
+    "executorRunTime" : 0,
+    "resultSize" : 0,
+    "jvmGcTime" : 0,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "blockFetchInfos" : [ ]
+  }
+}, {
+  "taskId" : 8,
+  "index" : 8,
+  "attempt" : 0,
+  "stageId" : 0,
+  "status" : "SUCCESS",
+  "launchTime" : "2016-05-28T00:56:47.648GMT",
+  "finishTime" : "2016-05-28T00:56:50.422GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ {
+    "id" : 0,
+    "name" : "internal.metrics.executorDeserializeTime",
+    "update" : "9",
+    "value" : "1687"
+  }, {
+    "id" : 1,
+    "name" : "internal.metrics.executorRunTime",
+    "update" : "2759",
+    "value" : "98413"
+  }, {
+    "id" : 2,
+    "name" : "internal.metrics.resultSize",
+    "update" : "3302",
+    "value" : "29862"
+  }, {
+    "id" : 3,
+    "name" : "internal.metrics.jvmGCTime",
+    "update" : "669",
+    "value" : "42812"
+  }, {
+    "id" : 7,
+    "name" : "internal.metrics.peakExecutionMemory",
+    "update" : "95628098",
+    "value" : "688442232"
+  }, {
+    "id" : 19,
+    "name" : "internal.metrics.shuffle.write.bytesWritten",
+    "update" : "6707863",
+    "value" : "61664224"
+  }, {
+    "id" : 20,
+    "name" : "internal.metrics.shuffle.write.recordsWritten",
+    "update" : "505768",
+    "value" : "4599202"
+  }, {
+    "id" : 21,
+    "name" : "internal.metrics.shuffle.write.writeTime",
+    "update" : "13903279",
+    "value" : "1473308956"
+  }, {
+    "id" : 23,
+    "name" : "internal.metrics.input.readMethod",
+    "update" : "Hadoop",
+    "value" : "Hadoop"
+  }, {
+    "id" : 24,
+    "name" : "internal.metrics.input.bytesRead",
+    "update" : "7537992",
+    "value" : "67841928"
+  }, {
+    "id" : 25,
+    "name" : "internal.metrics.input.recordsRead",
+    "update" : "505768",
+    "value" : "4599202"
+  } ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 9,
+    "executorRunTime" : 2759,
+    "resultSize" : 3302,
+    "jvmGcTime" : 669,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "inputMetrics" : {
+      "bytesRead" : 7537992,
+      "recordsRead" : 505768
+    },
+    "blockFetchInfos" : [ ],
+    "shuffleWriteMetrics" : {
+      "bytesWritten" : 6707863,
+      "writeTime" : 13903279,
+      "recordsWritten" : 505768,
+      "dataCharacteristics" : { }
+    }
+  }
+}, {
+  "taskId" : 2,
+  "index" : 2,
+  "attempt" : 0,
+  "stageId" : 0,
+  "status" : "SUCCESS",
+  "launchTime" : "2016-05-28T00:56:36.046GMT",
+  "finishTime" : "2016-05-28T00:56:48.445GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ {
+    "id" : 0,
+    "name" : "internal.metrics.executorDeserializeTime",
+    "update" : "208",
+    "value" : "1257"
+  }, {
+    "id" : 1,
+    "name" : "internal.metrics.executorRunTime",
+    "update" : "12173",
+    "value" : "70836"
+  }, {
+    "id" : 2,
+    "name" : "internal.metrics.resultSize",
+    "update" : "3320",
+    "value" : "19920"
+  }, {
+    "id" : 3,
+    "name" : "internal.metrics.jvmGCTime",
+    "update" : "5317",
+    "value" : "31310"
+  }, {
+    "id" : 5,
+    "name" : "internal.metrics.memoryBytesSpilled",
+    "update" : "72225055",
+    "value" : "448354571"
+  }, {
+    "id" : 6,
+    "name" : "internal.metrics.diskBytesSpilled",
+    "update" : "6245884",
+    "value" : "32900095"
+  }, {
+    "id" : 7,
+    "name" : "internal.metrics.peakExecutionMemory",
+    "update" : "72225055",
+    "value" : "448354571"
+  }, {
+    "id" : 19,
+    "name" : "internal.metrics.shuffle.write.bytesWritten",
+    "update" : "6959574",
+    "value" : "41491325"
+  }, {
+    "id" : 20,
+    "name" : "internal.metrics.shuffle.write.recordsWritten",
+    "update" : "514843",
+    "value" : "3082274"
+  }, {
+    "id" : 21,
+    "name" : "internal.metrics.shuffle.write.writeTime",
+    "update" : "84689358",
+    "value" : "1003927522"
+  }, {
+    "id" : 23,
+    "name" : "internal.metrics.input.readMethod",
+    "update" : "Hadoop",
+    "value" : "Hadoop"
+  }, {
+    "id" : 24,
+    "name" : "internal.metrics.input.bytesRead",
+    "update" : "7537992",
+    "value" : "45227952"
+  }, {
+    "id" : 25,
+    "name" : "internal.metrics.input.recordsRead",
+    "update" : "514843",
+    "value" : "3082274"
+  } ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 208,
+    "executorRunTime" : 12173,
+    "resultSize" : 3320,
+    "jvmGcTime" : 5317,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 72225055,
+    "diskBytesSpilled" : 6245884,
+    "inputMetrics" : {
+      "bytesRead" : 7537992,
+      "recordsRead" : 514843
+    },
+    "blockFetchInfos" : [ ],
+    "shuffleWriteMetrics" : {
+      "bytesWritten" : 6959574,
+      "writeTime" : 84689358,
+      "recordsWritten" : 514843,
+      "dataCharacteristics" : { }
+    }
+  }
+}, {
+  "taskId" : 5,
+  "index" : 5,
+  "attempt" : 0,
+  "stageId" : 0,
+  "status" : "SUCCESS",
+  "launchTime" : "2016-05-28T00:56:36.055GMT",
+  "finishTime" : "2016-05-28T00:56:48.162GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ {
+    "id" : 0,
+    "name" : "internal.metrics.executorDeserializeTime",
+    "update" : "209",
+    "value" : "837"
+  }, {
+    "id" : 1,
+    "name" : "internal.metrics.executorRunTime",
+    "update" : "11884",
+    "value" : "46708"
+  }, {
+    "id" : 2,
+    "name" : "internal.metrics.resultSize",
+    "update" : "3320",
+    "value" : "13280"
+  }, {
+    "id" : 3,
+    "name" : "internal.metrics.jvmGCTime",
+    "update" : "5218",
+    "value" : "20747"
+  }, {
+    "id" : 5,
+    "name" : "internal.metrics.memoryBytesSpilled",
+    "update" : "74846751",
+    "value" : "303908323"
+  }, {
+    "id" : 6,
+    "name" : "internal.metrics.diskBytesSpilled",
+    "update" : "6021563",
+    "value" : "21108920"
+  }, {
+    "id" : 7,
+    "name" : "internal.metrics.peakExecutionMemory",
+    "update" : "74846751",
+    "value" : "303908323"
+  }, {
+    "id" : 19,
+    "name" : "internal.metrics.shuffle.write.bytesWritten",
+    "update" : "6728737",
+    "value" : "27577037"
+  }, {
+    "id" : 20,
+    "name" : "internal.metrics.shuffle.write.recordsWritten",
+    "update" : "505346",
+    "value" : "2052817"
+  }, {
+    "id" : 21,
+    "name" : "internal.metrics.shuffle.write.writeTime",
+    "update" : "364386889",
+    "value" : "796969613"
+  }, {
+    "id" : 23,
+    "name" : "internal.metrics.input.readMethod",
+    "update" : "Hadoop",
+    "value" : "Hadoop"
+  }, {
+    "id" : 24,
+    "name" : "internal.metrics.input.bytesRead",
+    "update" : "7537992",
+    "value" : "30151968"
+  }, {
+    "id" : 25,
+    "name" : "internal.metrics.input.recordsRead",
+    "update" : "505346",
+    "value" : "2052817"
+  } ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 209,
+    "executorRunTime" : 11884,
+    "resultSize" : 3320,
+    "jvmGcTime" : 5218,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 74846751,
+    "diskBytesSpilled" : 6021563,
+    "inputMetrics" : {
+      "bytesRead" : 7537992,
+      "recordsRead" : 505346
+    },
+    "blockFetchInfos" : [ ],
+    "shuffleWriteMetrics" : {
+      "bytesWritten" : 6728737,
+      "writeTime" : 364386889,
+      "recordsWritten" : 505346,
+      "dataCharacteristics" : { }
+    }
+  }
+}, {
+  "taskId" : 4,
+  "index" : 4,
+  "attempt" : 0,
+  "stageId" : 0,
+  "status" : "SUCCESS",
+  "launchTime" : "2016-05-28T00:56:36.053GMT",
+  "finishTime" : "2016-05-28T00:56:47.912GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ {
+    "id" : 0,
+    "name" : "internal.metrics.executorDeserializeTime",
+    "update" : "212",
+    "value" : "423"
+  }, {
+    "id" : 1,
+    "name" : "internal.metrics.executorRunTime",
+    "update" : "11598",
+    "value" : "22942"
+  }, {
+    "id" : 2,
+    "name" : "internal.metrics.resultSize",
+    "update" : "3320",
+    "value" : "6640"
+  }, {
+    "id" : 3,
+    "name" : "internal.metrics.jvmGCTime",
+    "update" : "5174",
+    "value" : "10311"
+  }, {
+    "id" : 5,
+    "name" : "internal.metrics.memoryBytesSpilled",
+    "update" : "79187232",
+    "value" : "154181744"
+  }, {
+    "id" : 6,
+    "name" : "internal.metrics.diskBytesSpilled",
+    "update" : "4952507",
+    "value" : "9858808"
+  }, {
+    "id" : 7,
+    "name" : "internal.metrics.peakExecutionMemory",
+    "update" : "79187232",
+    "value" : "154181744"
+  }, {
+    "id" : 19,
+    "name" : "internal.metrics.shuffle.write.bytesWritten",
+    "update" : "6927408",
+    "value" : "13886115"
+  }, {
+    "id" : 20,
+    "name" : "internal.metrics.shuffle.write.recordsWritten",
+    "update" : "513079",
+    "value" : "1032210"
+  }, {
+    "id" : 21,
+    "name" : "internal.metrics.shuffle.write.writeTime",
+    "update" : "143729248",
+    "value" : "313618177"
+  }, {
+    "id" : 23,
+    "name" : "internal.metrics.input.readMethod",
+    "update" : "Hadoop",
+    "value" : "Hadoop"
+  }, {
+    "id" : 24,
+    "name" : "internal.metrics.input.bytesRead",
+    "update" : "7537992",
+    "value" : "15075984"
+  }, {
+    "id" : 25,
+    "name" : "internal.metrics.input.recordsRead",
+    "update" : "513079",
+    "value" : "1032210"
+  } ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 212,
+    "executorRunTime" : 11598,
+    "resultSize" : 3320,
+    "jvmGcTime" : 5174,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 79187232,
+    "diskBytesSpilled" : 4952507,
+    "inputMetrics" : {
+      "bytesRead" : 7537992,
+      "recordsRead" : 513079
+    },
+    "blockFetchInfos" : [ ],
+    "shuffleWriteMetrics" : {
+      "bytesWritten" : 6927408,
+      "writeTime" : 143729248,
+      "recordsWritten" : 513079,
+      "dataCharacteristics" : { }
+    }
+  }
+}, {
+  "taskId" : 7,
+  "index" : 7,
+  "attempt" : 0,
+  "stageId" : 0,
+  "status" : "SUCCESS",
+  "launchTime" : "2016-05-28T00:56:36.057GMT",
+  "finishTime" : "2016-05-28T00:56:48.551GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ {
+    "id" : 0,
+    "name" : "internal.metrics.executorDeserializeTime",
+    "update" : "214",
+    "value" : "1471"
+  }, {
+    "id" : 1,
+    "name" : "internal.metrics.executorRunTime",
+    "update" : "12273",
+    "value" : "83109"
+  }, {
+    "id" : 2,
+    "name" : "internal.metrics.resultSize",
+    "update" : "3320",
+    "value" : "23240"
+  }, {
+    "id" : 3,
+    "name" : "internal.metrics.jvmGCTime",
+    "update" : "5362",
+    "value" : "36672"
+  }, {
+    "id" : 5,
+    "name" : "internal.metrics.memoryBytesSpilled",
+    "update" : "72233694",
+    "value" : "520588265"
+  }, {
+    "id" : 6,
+    "name" : "internal.metrics.diskBytesSpilled",
+    "update" : "5692322",
+    "value" : "38592417"
+  }, {
+    "id" : 7,
+    "name" : "internal.metrics.peakExecutionMemory",
+    "update" : "72233694",
+    "value" : "520588265"
+  }, {
+    "id" : 19,
+    "name" : "internal.metrics.shuffle.write.bytesWritten",
+    "update" : "6723815",
+    "value" : "48215140"
+  }, {
+    "id" : 20,
+    "name" : "internal.metrics.shuffle.write.recordsWritten",
+    "update" : "505691",
+    "value" : "3587965"
+  }, {
+    "id" : 21,
+    "name" : "internal.metrics.shuffle.write.writeTime",
+    "update" : "305550146",
+    "value" : "1309477668"
+  }, {
+    "id" : 23,
+    "name" : "internal.metrics.input.readMethod",
+    "update" : "Hadoop",
+    "value" : "Hadoop"
+  }, {
+    "id" : 24,
+    "name" : "internal.metrics.input.bytesRead",
+    "update" : "7537992",
+    "value" : "52765944"
+  }, {
+    "id" : 25,
+    "name" : "internal.metrics.input.recordsRead",
+    "update" : "505691",
+    "value" : "3587965"
+  } ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 214,
+    "executorRunTime" : 12273,
+    "resultSize" : 3320,
+    "jvmGcTime" : 5362,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 72233694,
+    "diskBytesSpilled" : 5692322,
+    "inputMetrics" : {
+      "bytesRead" : 7537992,
+      "recordsRead" : 505691
+    },
+    "blockFetchInfos" : [ ],
+    "shuffleWriteMetrics" : {
+      "bytesWritten" : 6723815,
+      "writeTime" : 305550146,
+      "recordsWritten" : 505691,
+      "dataCharacteristics" : { }
+    }
+  }
+}, {
+  "taskId" : 1,
+  "index" : 1,
+  "attempt" : 0,
+  "stageId" : 0,
+  "status" : "SUCCESS",
+  "launchTime" : "2016-05-28T00:56:36.044GMT",
+  "finishTime" : "2016-05-28T00:56:48.231GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ {
+    "id" : 0,
+    "name" : "internal.metrics.executorDeserializeTime",
+    "update" : "212",
+    "value" : "1049"
+  }, {
+    "id" : 1,
+    "name" : "internal.metrics.executorRunTime",
+    "update" : "11955",
+    "value" : "58663"
+  }, {
+    "id" : 2,
+    "name" : "internal.metrics.resultSize",
+    "update" : "3320",
+    "value" : "16600"
+  }, {
+    "id" : 3,
+    "name" : "internal.metrics.jvmGCTime",
+    "update" : "5246",
+    "value" : "25993"
+  }, {
+    "id" : 5,
+    "name" : "internal.metrics.memoryBytesSpilled",
+    "update" : "72221193",
+    "value" : "376129516"
+  }, {
+    "id" : 6,
+    "name" : "internal.metrics.diskBytesSpilled",
+    "update" : "5545291",
+    "value" : "26654211"
+  }, {
+    "id" : 7,
+    "name" : "internal.metrics.peakExecutionMemory",
+    "update" : "72221193",
+    "value" : "376129516"
+  }, {
+    "id" : 19,
+    "name" : "internal.metrics.shuffle.write.bytesWritten",
+    "update" : "6954714",
+    "value" : "34531751"
+  }, {
+    "id" : 20,
+    "name" : "internal.metrics.shuffle.write.recordsWritten",
+    "update" : "514614",
+    "value" : "2567431"
+  }, {
+    "id" : 21,
+    "name" : "internal.metrics.shuffle.write.writeTime",
+    "update" : "122268551",
+    "value" : "919238164"
+  }, {
+    "id" : 23,
+    "name" : "internal.metrics.input.readMethod",
+    "update" : "Hadoop",
+    "value" : "Hadoop"
+  }, {
+    "id" : 24,
+    "name" : "internal.metrics.input.bytesRead",
+    "update" : "7537992",
+    "value" : "37689960"
+  }, {
+    "id" : 25,
+    "name" : "internal.metrics.input.recordsRead",
+    "update" : "514614",
+    "value" : "2567431"
+  } ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 212,
+    "executorRunTime" : 11955,
+    "resultSize" : 3320,
+    "jvmGcTime" : 5246,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 72221193,
+    "diskBytesSpilled" : 5545291,
+    "inputMetrics" : {
+      "bytesRead" : 7537992,
+      "recordsRead" : 514614
+    },
+    "blockFetchInfos" : [ ],
+    "shuffleWriteMetrics" : {
+      "bytesWritten" : 6954714,
+      "writeTime" : 122268551,
+      "recordsWritten" : 514614,
+      "dataCharacteristics" : { }
+    }
+  }
+}, {
+  "taskId" : 9,
+  "index" : 9,
+  "attempt" : 0,
+  "stageId" : 0,
+  "status" : "SUCCESS",
+  "launchTime" : "2016-05-28T00:56:47.896GMT",
+  "finishTime" : "2016-05-28T00:56:50.528GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ {
+    "id" : 0,
+    "name" : "internal.metrics.executorDeserializeTime",
+    "update" : "1",
+    "value" : "1688"
+  }, {
+    "id" : 1,
+    "name" : "internal.metrics.executorRunTime",
+    "update" : "2627",
+    "value" : "101040"
+  }, {
+    "id" : 2,
+    "name" : "internal.metrics.resultSize",
+    "update" : "3302",
+    "value" : "33164"
+  }, {
+    "id" : 3,
+    "name" : "internal.metrics.jvmGCTime",
+    "update" : "632",
+    "value" : "43444"
+  }, {
+    "id" : 7,
+    "name" : "internal.metrics.peakExecutionMemory",
+    "update" : "95963551",
+    "value" : "784405783"
+  }, {
+    "id" : 19,
+    "name" : "internal.metrics.shuffle.write.bytesWritten",
+    "update" : "6679196",
+    "value" : "68343420"
+  }, {
+    "id" : 20,
+    "name" : "internal.metrics.shuffle.write.recordsWritten",
+    "update" : "505837",
+    "value" : "5105039"
+  }, {
+    "id" : 21,
+    "name" : "internal.metrics.shuffle.write.writeTime",
+    "update" : "13904552",
+    "value" : "1487213508"
+  }, {
+    "id" : 23,
+    "name" : "internal.metrics.input.readMethod",
+    "update" : "Hadoop",
+    "value" : "Hadoop"
+  }, {
+    "id" : 24,
+    "name" : "internal.metrics.input.bytesRead",
+    "update" : "7537998",
+    "value" : "75379926"
+  }, {
+    "id" : 25,
+    "name" : "internal.metrics.input.recordsRead",
+    "update" : "505837",
+    "value" : "5105039"
+  } ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 1,
+    "executorRunTime" : 2627,
+    "resultSize" : 3302,
+    "jvmGcTime" : 632,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "inputMetrics" : {
+      "bytesRead" : 7537998,
+      "recordsRead" : 505837
+    },
+    "blockFetchInfos" : [ ],
+    "shuffleWriteMetrics" : {
+      "bytesWritten" : 6679196,
+      "writeTime" : 13904552,
+      "recordsWritten" : 505837,
+      "dataCharacteristics" : { }
+    }
+  }
+}, {
+  "taskId" : 3,
+  "index" : 3,
+  "attempt" : 0,
+  "stageId" : 0,
+  "status" : "SUCCESS",
+  "launchTime" : "2016-05-28T00:56:36.052GMT",
+  "finishTime" : "2016-05-28T00:56:48.157GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ {
+    "id" : 0,
+    "name" : "internal.metrics.executorDeserializeTime",
+    "update" : "205",
+    "value" : "628"
+  }, {
+    "id" : 1,
+    "name" : "internal.metrics.executorRunTime",
+    "update" : "11882",
+    "value" : "34824"
+  }, {
+    "id" : 2,
+    "name" : "internal.metrics.resultSize",
+    "update" : "3320",
+    "value" : "9960"
+  }, {
+    "id" : 3,
+    "name" : "internal.metrics.jvmGCTime",
+    "update" : "5218",
+    "value" : "15529"
+  }, {
+    "id" : 5,
+    "name" : "internal.metrics.memoryBytesSpilled",
+    "update" : "74879828",
+    "value" : "229061572"
+  }, {
+    "id" : 6,
+    "name" : "internal.metrics.diskBytesSpilled",
+    "update" : "5228549",
+    "value" : "15087357"
+  }, {
+    "id" : 7,
+    "name" : "internal.metrics.peakExecutionMemory",
+    "update" : "74879828",
+    "value" : "229061572"
+  }, {
+    "id" : 19,
+    "name" : "internal.metrics.shuffle.write.bytesWritten",
+    "update" : "6962185",
+    "value" : "20848300"
+  }, {
+    "id" : 20,
+    "name" : "internal.metrics.shuffle.write.recordsWritten",
+    "update" : "515261",
+    "value" : "1547471"
+  }, {
+    "id" : 21,
+    "name" : "internal.metrics.shuffle.write.writeTime",
+    "update" : "118964547",
+    "value" : "432582724"
+  }, {
+    "id" : 23,
+    "name" : "internal.metrics.input.readMethod",
+    "update" : "Hadoop",
+    "value" : "Hadoop"
+  }, {
+    "id" : 24,
+    "name" : "internal.metrics.input.bytesRead",
+    "update" : "7537992",
+    "value" : "22613976"
+  }, {
+    "id" : 25,
+    "name" : "internal.metrics.input.recordsRead",
+    "update" : "515261",
+    "value" : "1547471"
+  } ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 205,
+    "executorRunTime" : 11882,
+    "resultSize" : 3320,
+    "jvmGcTime" : 5218,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 74879828,
+    "diskBytesSpilled" : 5228549,
+    "inputMetrics" : {
+      "bytesRead" : 7537992,
+      "recordsRead" : 515261
+    },
+    "blockFetchInfos" : [ ],
+    "shuffleWriteMetrics" : {
+      "bytesWritten" : 6962185,
+      "writeTime" : 118964547,
+      "recordsWritten" : 515261,
+      "dataCharacteristics" : { }
+    }
+  }
+}, {
+  "taskId" : 6,
+  "index" : 6,
+  "attempt" : 0,
+  "stageId" : 0,
+  "status" : "SUCCESS",
+  "launchTime" : "2016-05-28T00:56:36.056GMT",
+  "finishTime" : "2016-05-28T00:56:48.877GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ {
+    "id" : 0,
+    "name" : "internal.metrics.executorDeserializeTime",
+    "update" : "207",
+    "value" : "1678"
+  }, {
+    "id" : 1,
+    "name" : "internal.metrics.executorRunTime",
+    "update" : "12545",
+    "value" : "95654"
+  }, {
+    "id" : 2,
+    "name" : "internal.metrics.resultSize",
+    "update" : "3320",
+    "value" : "26560"
+  }, {
+    "id" : 3,
+    "name" : "internal.metrics.jvmGCTime",
+    "update" : "5471",
+    "value" : "42143"
+  }, {
+    "id" : 5,
+    "name" : "internal.metrics.memoryBytesSpilled",
+    "update" : "72225869",
+    "value" : "592814134"
+  }, {
+    "id" : 6,
+    "name" : "internal.metrics.diskBytesSpilled",
+    "update" : "4845270",
+    "value" : "43437687"
+  }, {
+    "id" : 7,
+    "name" : "internal.metrics.peakExecutionMemory",
+    "update" : "72225869",
+    "value" : "592814134"
+  }, {
+    "id" : 19,
+    "name" : "internal.metrics.shuffle.write.bytesWritten",
+    "update" : "6741221",
+    "value" : "54956361"
+  }, {
+    "id" : 20,
+    "name" : "internal.metrics.shuffle.write.recordsWritten",
+    "update" : "505469",
+    "value" : "4093434"
+  }, {
+    "id" : 21,
+    "name" : "internal.metrics.shuffle.write.writeTime",
+    "update" : "149928009",
+    "value" : "1459405677"
+  }, {
+    "id" : 23,
+    "name" : "internal.metrics.input.readMethod",
+    "update" : "Hadoop",
+    "value" : "Hadoop"
+  }, {
+    "id" : 24,
+    "name" : "internal.metrics.input.bytesRead",
+    "update" : "7537992",
+    "value" : "60303936"
+  }, {
+    "id" : 25,
+    "name" : "internal.metrics.input.recordsRead",
+    "update" : "505469",
+    "value" : "4093434"
+  } ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 207,
+    "executorRunTime" : 12545,
+    "resultSize" : 3320,
+    "jvmGcTime" : 5471,
+    "resultSerializationTime" : 0,
+    "memoryBytesSpilled" : 72225869,
+    "diskBytesSpilled" : 4845270,
+    "inputMetrics" : {
+      "bytesRead" : 7537992,
+      "recordsRead" : 505469
+    },
+    "blockFetchInfos" : [ ],
+    "shuffleWriteMetrics" : {
+      "bytesWritten" : 6741221,
+      "writeTime" : 149928009,
+      "recordsWritten" : 505469,
+      "dataCharacteristics" : { }
+    }
+  }
+}, {
+  "taskId" : 0,
+  "index" : 0,
+  "attempt" : 0,
+  "stageId" : 0,
+  "status" : "SUCCESS",
+  "launchTime" : "2016-05-28T00:56:36.024GMT",
+  "finishTime" : "2016-05-28T00:56:47.683GMT",
+  "executorId" : "driver",
+  "host" : "localhost",
+  "taskLocality" : "PROCESS_LOCAL",
+  "speculative" : false,
+  "accumulatorUpdates" : [ {
+    "id" : 0,
+    "name" : "internal.metrics.executorDeserializeTime",
+    "update" : "211",
+    "value" : "211"
+  }, {
+    "id" : 1,
+    "name" : "internal.metrics.executorRunTime",
+    "update" : "11344",
+    "value" : "11344"
+  }, {
+    "id" : 2,
+    "name" : "internal.metrics.resultSize",
+    "update" : "3320",
+    "value" : "3320"
+  }, {
+    "id" : 3,
+    "name" : "internal.metrics.jvmGCTime",
+    "update" : "5137",
+    "value" : "5137"
+  }, {
+    "id" : 4,
+    "name" : "internal.metrics.resultSerializationTime",
+    "update" : "2",
+    "value" : "2"
+  }, {
+    "id" : 5,
+    "name" : "internal.metrics.memoryBytesSpilled",
+    "update" : "74994512",
+    "value" : "74994512"
+  }, {
+    "id" : 6,
+    "name" : "internal.metrics.diskBytesSpilled",
+    "update" : "4906301",
+    "value" : "4906301"
+  }, {
+    "id" : 7,
+    "name" : "internal.metrics.peakExecutionMemory",
+    "update" : "74994512",
+    "value" : "74994512"
+  }, {
+    "id" : 19,
+    "name" : "internal.metrics.shuffle.write.bytesWritten",
+    "update" : "6958707",
+    "value" : "6958707"
+  }, {
+    "id" : 20,
+    "name" : "internal.metrics.shuffle.write.recordsWritten",
+    "update" : "519131",
+    "value" : "519131"
+  }, {
+    "id" : 21,
+    "name" : "internal.metrics.shuffle.write.writeTime",
+    "update" : "169888929",
+    "value" : "169888929"
+  }, {
+    "id" : 23,
+    "name" : "internal.metrics.input.readMethod",
+    "update" : "Hadoop",
+    "value" : "Hadoop"
+  }, {
+    "id" : 24,
+    "name" : "internal.metrics.input.bytesRead",
+    "update" : "7537992",
+    "value" : "7537992"
+  }, {
+    "id" : 25,
+    "name" : "internal.metrics.input.recordsRead",
+    "update" : "519131",
+    "value" : "519131"
+  } ],
+  "taskMetrics" : {
+    "executorDeserializeTime" : 211,
+    "executorRunTime" : 11344,
+    "resultSize" : 3320,
+    "jvmGcTime" : 5137,
+    "resultSerializationTime" : 2,
+    "memoryBytesSpilled" : 74994512,
+    "diskBytesSpilled" : 4906301,
+    "inputMetrics" : {
+      "bytesRead" : 7537992,
+      "recordsRead" : 519131
+    },
+    "blockFetchInfos" : [ ],
+    "shuffleWriteMetrics" : {
+      "bytesWritten" : 6958707,
+      "writeTime" : 169888929,
+      "recordsWritten" : 519131,
+      "dataCharacteristics" : { }
+    }
+  }
+} ]
