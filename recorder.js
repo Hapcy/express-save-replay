@@ -65,6 +65,7 @@ app.use("/", proxy(originalSource, {
         var tokenizedUrl = aUrl.path.split("/");
         tokenizedUrl.shift();
         createDir(tokenizedUrl,subPath);
+		res.setHeader('Access-Control-Allow-Origin', '*');
         callback(null, data);
     }
 }));

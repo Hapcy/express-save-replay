@@ -30,6 +30,7 @@ app.use("/",function(req,res){
          aUrl = "/__root";
      }
      const path = subPath + aUrl + ".data";
+	 res.setHeader('Access-Control-Allow-Origin', '*');
      fs.readFile(path, function(err,data){
         res.json(JSON.parse(data.toString('utf-8'))); 
      });
