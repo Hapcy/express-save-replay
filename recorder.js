@@ -39,8 +39,7 @@ app.use("/", proxy(originalSource, {
                 splittedDestination.push(filename);
                 dest = splittedDestination.join("/");
             }
-            fs.writeFile(dest + ".data", data,function(){
-            });
+            fs.writeFile(dest + ".data", data,function(){});
         };
         var createDir = function(subPaths, acc){
             if(subPaths.length === 1){
@@ -65,11 +64,11 @@ app.use("/", proxy(originalSource, {
         var tokenizedUrl = aUrl.path.split("/");
         tokenizedUrl.shift();
         createDir(tokenizedUrl,subPath);
-		res.setHeader('Access-Control-Allow-Origin', '*');
+		    res.setHeader('Access-Control-Allow-Origin', '*');
         callback(null, data);
     }
 }));
 
 app.listen(3000, function(){
-    console.log("App is recording traffic to " + originalSource); 
+    console.log("App is recording traffic to " + originalSource);
 });
