@@ -1,6 +1,6 @@
 {
   "name": "node-save-replay",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A pair of express servers. One of them is supposed to proxy all requests to a given host then save and return the response. The other one is supposed to be able to mock and replay a \"session\" of responses created by the other one.",
   "main": "index.js",
   "scripts": {
