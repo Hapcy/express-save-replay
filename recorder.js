@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const express = require("express");
 const proxy = require("express-http-proxy");
 const fs = require("fs");
