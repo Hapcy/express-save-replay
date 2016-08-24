@@ -3,7 +3,7 @@ const express = require("express");
 const fs = require("fs");
 const url = require("url");
 
-const { isTimeStamp, createTimeStampedFileLoc } = require('./timeStampHelpers');
+const { hasTimeStamp, createTimeStampedFileLoc } = require('./timeStampHelpers');
 const { decodeSpecialCharacters } = require('./specialCharacterConverter');
 
 const app = express();
@@ -17,7 +17,7 @@ app.use("/",function(req,res){
 	const aUrl = url.parse(req.url);
 	const splittedDestination = aUrl.path.split("/");
 	var fileLoc;
-	if(isTimeStamp(splittedDestination[splittedDestination.length-1])){
+	if(hasTimeStamp(splittedDestination[splittedDestination.length-1])){
 		fileLoc = createTimeStampedFileLoc(splittedDestination, timeStampedDirs);
 	} else {
 		fileLoc = aUrl.path;
@@ -27,7 +27,6 @@ app.use("/",function(req,res){
 	}
 	const path = subPath + fileLoc + ".data";
 	res.setHeader('Access-Control-Allow-Origin', '*');
-	console.log(decodeSpecialCharacters(path));
 	fs.readFile(decodeSpecialCharacters(path), function(err,data){
 		if( err ){
 			if(maxRetries === null){

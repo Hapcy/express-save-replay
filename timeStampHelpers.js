@@ -1,7 +1,10 @@
 const key = ['almafa', 'porkolt'];
 
-function isTimeStamp(probableTimeStampString) {
-	const possibleTimeStamp = parseInt(probableTimeStampString);
+function hasTimeStamp(probableTimeStampString) {
+	const helperString = probableTimeStampString.split().reverse().join();
+	const reversedTimestampString = helperString.match(/^([0-9]*).*/)[1];
+	const timestampString = reversedTimestampString.split().reverse().join();
+	const possibleTimeStamp = parseInt(timestampString);
 	const checker = new Date(possibleTimeStamp);
 	return checker.getTime() === possibleTimeStamp;
 }
@@ -19,6 +22,6 @@ function createTimeStampedFileLoc(splittedLocation, timeStampedDirs) {
 	return tmp.join('/');
 }
 module.exports = {
-	isTimeStamp,
+	hasTimeStamp,
 	createTimeStampedFileLoc
 };

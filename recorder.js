@@ -8,7 +8,7 @@ const app = express();
 const originalSource = process.argv[2];
 const subPath = process.argv[3];
 
-const { isTimeStamp, createTimeStampedFileLoc } = require('./timeStampHelpers');
+const { hasTimeStamp, createTimeStampedFileLoc } = require('./timeStampHelpers');
 const { encodeSpecialCharacters } = require('./specialCharacterConverter');
 
 var timeStampedDirs = {};
@@ -28,7 +28,7 @@ app.use('/', proxy(originalSource, {
 		function writeFile(dest){
             const splittedDestination = dest.split('/');
 			var fileLoc;
-            if(isTimeStamp(splittedDestination[splittedDestination.length-1])){
+            if(hasTimeStamp(splittedDestination[splittedDestination.length-1])){
 				fileLoc = createTimeStampedFileLoc(splittedDestination, timeStampedDirs);
             } else {
 				fileLoc = dest;
@@ -40,12 +40,12 @@ app.use('/', proxy(originalSource, {
 				headers: rsp.headers,
 			}), ()=>{});
         }
-		
+
 		function createDir(subPaths, accumulator){
-            if(subPaths.length === 1){
+            if(subPaths.length === 2){
                 accumulator += '/' + subPaths.shift();
                 writeFile(accumulator);
-            }else if(subPaths.length === 0){
+            }else if(subPaths.length === 1){
                 accumulator += '/__root';
                 writeFile(accumulator);
             }else{
@@ -59,13 +59,13 @@ app.use('/', proxy(originalSource, {
                 });
             }
         }
-		
+
         const aUrl = url.parse(req.url);
-        
+
         var tokenizedUrl = aUrl.path.split('/');
-		
+
         tokenizedUrl.shift();
-		
+
         createDir(tokenizedUrl,subPath);
 		res.setHeader('Access-Control-Allow-Origin', '*');
         callback(null, data);
