@@ -1,15 +1,17 @@
 #!/usr/bin/env node
-const express = require("express");
-const proxy = require("express-http-proxy");
-const fs = require("fs");
-const url = require("url");
+const express = require('express');
+const proxy = require('express-http-proxy');
+const fs = require('fs');
+const url = require('url');
 
 const app = express();
 const originalSource = process.argv[2];
 const subPath = process.argv[3];
 
+const { isTimeStamp, createTimeStampedFileLoc } = require('./timeStampHelpers');
+const { encodeSpecialCharacters } = require('./specialCharacterConverter');
+
 var timeStampedDirs = {};
-const key = "almafa";
 
 const subdir = fs.stat(subPath, function(err,stat){
         if(err || !stat.isDirectory()){
@@ -18,58 +20,58 @@ const subdir = fs.stat(subPath, function(err,stat){
     }
 );
 
-app.use("/", proxy(originalSource, {
+app.use('/', proxy(originalSource, {
     forwardPath: function(req,res){
         return url.parse(req.url).path;
     },
     intercept: function(rsp, data, req, res, callback){
-        var aUrl = url.parse(req.url);
-        var writeFile = function(dest){
-            var splittedDestination = dest.split("/");
-            var possibleTimeStamp = parseInt(splittedDestination[splittedDestination.length-1]);
-            var checker = new Date(possibleTimeStamp);
-            if(checker.getTime() === possibleTimeStamp){
-                splittedDestination.splice(-1);
-                var dirname = splittedDestination.join("/");
-                if(!timeStampedDirs[dirname]){
-                    timeStampedDirs[dirname] = 0;
-                }
-                ++timeStampedDirs[dirname];
-                var filename = timeStampedDirs[dirname] + key;
-                filename = new Buffer(filename).toString('base64');
-                splittedDestination.push(filename);
-                dest = splittedDestination.join("/");
-            }
-            fs.writeFile(dest + ".data", data,function(){});
-        };
-        var createDir = function(subPaths, acc){
+		function writeFile(dest){
+            const splittedDestination = dest.split('/');
+			var fileLoc;
+            if(isTimeStamp(splittedDestination[splittedDestination.length-1])){
+				fileLoc = createTimeStampedFileLoc(splittedDestination, timeStampedDirs);
+            } else {
+				fileLoc = dest;
+			}
+			fileLoc += '.data';
+            fs.writeFile(encodeSpecialCharacters(fileLoc), JSON.stringify({
+				data: data.toString(),
+				status: rsp.statusCode,
+				headers: rsp.headers,
+			}), ()=>{});
+        }
+		
+		function createDir(subPaths, accumulator){
             if(subPaths.length === 1){
-                acc += "/" + subPaths.shift();
-                writeFile(acc);
+                accumulator += '/' + subPaths.shift();
+                writeFile(accumulator);
             }else if(subPaths.length === 0){
-                acc += "/__root";
-                writeFile(acc);
+                accumulator += '/__root';
+                writeFile(accumulator);
             }else{
-                acc += "/" + subPaths.shift();
-                fs.stat(acc, function(err,stat){
+                accumulator += '/' + subPaths.shift();
+                fs.stat(accumulator, function(err,stat){
                     if(err || !stat.isDirectory()){
-                        fs.mkdir(acc,function(){
-                            createDir(subPaths,acc);
-                        });
+                        fs.mkdir(accumulator, () => createDir(subPaths,accumulator));
                     }else{
-                        createDir(subPaths,acc);
+                        createDir(subPaths,accumulator);
                     }
                 });
             }
-        };
-        var tokenizedUrl = aUrl.path.split("/");
+        }
+		
+        const aUrl = url.parse(req.url);
+        
+        var tokenizedUrl = aUrl.path.split('/');
+		
         tokenizedUrl.shift();
+		
         createDir(tokenizedUrl,subPath);
-		    res.setHeader('Access-Control-Allow-Origin', '*');
+		res.setHeader('Access-Control-Allow-Origin', '*');
         callback(null, data);
     }
 }));
 
 app.listen(3000, function(){
-    console.log("App is recording traffic to " + originalSource);
+    console.log('App is recording traffic to ' + originalSource);
 });
