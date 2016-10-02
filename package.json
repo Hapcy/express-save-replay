@@ -1,21 +1,22 @@
 {
-  "name": "node-save-replay",
-  "version": "1.1.3",
-  "description": "A pair of express servers. One of them is supposed to proxy all requests to a given host then save and return the response. The other one is supposed to be able to mock and replay a \"session\" of responses created by the other one.",
-  "main": "index.js",
+  "name": "express-save-replay",
+  "version": "2.0.0",
+  "description": "A pair of route handlers. One of them is supposed to proxy all requests to a given host then save and return the response. The other one is supposed to be able to mock and replay a \"session\" of responses created by the other one.",
+  "keywords": ["test", "save", "record", "replay", "express", "proxy"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "recorder": "node recorder.js",
-    "replay": "node replay.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "index.js",
   "author": "tibor.moger",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.13.4",
     "express-http-proxy": "^0.6.0"
   },
-  "bin": {
-    "express-record": "./recorder.js",
-    "express-replay": "./replay.js"
+  "devDependencies": {
+    "express": "^4.13.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hapcy/express-save-replay.git"
   }
 }

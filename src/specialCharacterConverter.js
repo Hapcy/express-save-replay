@@ -57,21 +57,12 @@ const specialCodes = [
 
 function encodeSpecialCharacters(string) {
 	return specialCodes.reduce(
-		(memo, specialChar) => 
+		(memo, specialChar) =>
 			memo.replace(specialChar.charRegex, specialChar.code),
-		string
-	);
-}
-
-function decodeSpecialCharacters(string) {
-	return specialCodes.reduce(
-		(memo, specialChar) => 
-			memo.replace(specialChar.codeRegex, specialChar.character),
 		string
 	);
 }
 
 module.exports = {
 	encodeSpecialCharacters,
-	decodeSpecialCharacters
 }
