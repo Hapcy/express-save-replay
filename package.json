@@ -1,6 +1,6 @@
 {
   "name": "express-save-replay",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A pair of route handlers. One of them is supposed to proxy all requests to a given host then save and return the response. The other one is supposed to be able to mock and replay a \"session\" of responses created by the other one.",
   "keywords": [
     "test",

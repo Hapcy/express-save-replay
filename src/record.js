@@ -6,27 +6,29 @@ const { encodeSpecialCharacters } = require('./specialCharacterConverter');
 const { decodeDataWith } = require('./encodingHelper');
 
 function writeFile({ dest, data, rsp, shouldCreateReadableData }, callback = () => {}) {
-  function realWriteFile({ dataWritable, fileLoc }) {
-    fs.writeFile(encodeSpecialCharacters(fileLoc), JSON.stringify({
-      data: dataWritable,
-      status: rsp.statusCode,
-      headers: rsp.headers,
-    }), (err) => {
-      if (err) {
-        console.error(`Failed to write to file at ${dest}: ${err}`);
-      } else {
-        callback();
-      }
-    });
+  function fileWriterTo(fileLoc) {
+    return function realWriteFile(dataWritable) {
+      fs.writeFile(encodeSpecialCharacters(fileLoc), JSON.stringify({
+        data: dataWritable,
+        status: rsp.statusCode,
+        headers: rsp.headers,
+      }), (err) => {
+        if (err) {
+          console.error(`Failed to write to file at ${dest}: ${err}`);
+        } else {
+          callback();
+        }
+      });
+    };
   }
   const fileLoc = `${dest}.data`;
   if (!shouldCreateReadableData) {
-    realWriteFile({ dataWritable: data, fileLoc });
+    fileWriterTo(fileLoc)(data);
   } else {
     decodeDataWith({
       data,
       contentEncodingHeader: rsp.headers['content-encoding'],
-    }, realWriteFile);
+    }, fileWriterTo(fileLoc));
   }
 }
 
