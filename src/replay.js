@@ -33,6 +33,7 @@ module.exports = function IIFE({
           if (currentRetries > maxRetries) {
             console.log('Number of retries was reached. Restarting.');
             currentRetries = 0;
+            timeStampExtractor.reset();
           }
           res.status(429).send('See more about this error at: https://http.cat/429');
         }
