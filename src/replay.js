@@ -15,7 +15,7 @@ module.exports = function IIFE({
 }) {
   let currentRetries = 0;
   return function replayer(req, res) {
-    const aUrlPath = timeStampExtractor.modifyPath(url.parse(req.url).path);
+    const aUrlPath = timeStampExtractor.modifyPath(url.parse(req.url)).path;
     let fileLoc = aUrlPath;
     if (fileLoc.length <= 1) {
       fileLoc = '/__root';
