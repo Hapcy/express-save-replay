@@ -5,8 +5,8 @@ const url = require('url');
 const { encodeSpecialCharacters } = require('./specialCharacterConverter');
 const { decodeDataWith } = require('./encodingHelper');
 
-function writeFile({ dest, data, rsp, shouldCreateReadableData }, callback = ()=>{}){
-  function realWriteFile(dataWritable) {
+function writeFile({ dest, data, rsp, shouldCreateReadableData }, callback = () => {}) {
+  function realWriteFile({ dataWritable, fileLoc }) {
     fs.writeFile(encodeSpecialCharacters(fileLoc), JSON.stringify({
       data: dataWritable,
       status: rsp.statusCode,
@@ -21,7 +21,7 @@ function writeFile({ dest, data, rsp, shouldCreateReadableData }, callback = ()=
   }
   const fileLoc = `${dest}.data`;
   if (!shouldCreateReadableData) {
-    realWriteFile(data);
+    realWriteFile({ dataWritable: data, fileLoc });
   } else {
     decodeDataWith({
       data,
@@ -31,43 +31,45 @@ function writeFile({ dest, data, rsp, shouldCreateReadableData }, callback = ()=
 }
 
 
-function createDir({ subPaths, accumulator }, callback = ()=>{}) {
+function createDir({ subPaths, accumulator }, callback = () => {}) {
+  let newAccumulator = '';
   if (subPaths.length === 1) {
     const newPart = subPaths.shift();
     if (newPart === '') {
-      accumulator += '/__root';
-      callback(accumulator);
+      newAccumulator = `${accumulator}/__root`;
+      callback(newAccumulator);
     } else {
-      accumulator += '/' + newPart;
-      callback(accumulator);
+      newAccumulator = `${accumulator}/${newPart}`;
+      callback(newAccumulator);
     }
   } else {
-    accumulator += '/' + subPaths.shift();
-    fs.stat(accumulator, function(err,stat){
-      if (err) {
-        fs.mkdir(accumulator, (err) => {
-          if (err) {
-            console.error(`Failed to create directory ${accumulator}`);
+    newAccumulator = `${accumulator}/${subPaths.shift()}`;
+    fs.stat(newAccumulator, (statErr, stat) => {
+      if (statErr) {
+        fs.mkdir(newAccumulator, (mkdirErr) => {
+          if (mkdirErr) {
+            console.error(`Failed to create directory ${newAccumulator}`);
           } else {
-            createDir({subPaths,accumulator}, callback);
+            createDir({ subPaths, accumulator: newAccumulator }, callback);
           }
         });
       } else if (!stat.isDirectory()) {
-        console.error(`File at ${accumulator} already exists. Failed to create directory.`);
+        console.error(`File at ${newAccumulator} already exists. Failed to create directory.`);
       } else {
-        createDir({subPaths,accumulator}, callback);
+        createDir({ subPaths, accumulator: newAccumulator }, callback);
       }
     });
   }
 }
 
-module.exports = function({
+module.exports = function IIFE({
   remoteUrl,
   baseDirForUrl,
   timeStampExtractor = {
-    modifyPath: url => url,
+    modifyPath: oldUrl => oldUrl,
   },
   shouldCreateReadableData,
+  prevent304 = true,
 }) {
   try {
     const baseDirStat = fs.statSync(baseDirForUrl);
@@ -78,27 +80,37 @@ module.exports = function({
     fs.mkdirSync(baseDirForUrl);
   }
   return proxy(remoteUrl, {
-    forwardPath (req,res) {
+    decorateRequest(proxyReq, originalReq) {
+      let retReq;
+      if (prevent304) {
+        retReq = proxyReq;
+        retReq.headers['if-none-match'] = 'no-match-for-this';
+      } else {
+        retReq = originalReq;
+      }
+      return retReq;
+    },
+    forwardPath(req) {
       return url.parse(req.url).path;
     },
-    intercept (rsp, data, req, res, callback) {
+    intercept(rsp, data, req, res, callback) {
       const aUrl = timeStampExtractor.modifyPath(url.parse(req.url));
-      let tokenizedUrl = aUrl.path.split('/');
+      const tokenizedUrl = aUrl.path.split('/');
       tokenizedUrl.shift();
       createDir({
         subPaths: tokenizedUrl,
         accumulator: `./${baseDirForUrl}`,
-      }, (filePath) => writeFile({
-          data,
-          rsp,
-          shouldCreateReadableData,
-          dest: `${filePath}`,
-        }, () => {
-            res.setHeader('Access-Control-Allow-Origin', '*');
-            callback(null, data);
-          }
+      }, filePath => writeFile({
+        data,
+        rsp,
+        shouldCreateReadableData,
+        dest: `${filePath}`,
+      }, () => {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        callback(null, data);
+      }
         )
       );
-    }
+    },
   });
 };

@@ -15,6 +15,7 @@ A pair of route handlers. One of them is supposed to proxy all requests to a giv
 ## Record
 
 - remoteUrl: Defines where the requests should be forwarded.
+- prevent304: (Default: true) Modifies the header of the request so that the remote resource never answers with 304. There may be many cases where you have to turn it off due to the server not accepting such headers. In this case you must turn off caching in your browser or requester application
 
 ## Possible usage
 
